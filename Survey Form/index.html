@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form below:</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" min="10" max="100" placeholder="Enter your age">
+
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <p>Choose your favorite color:</p>
+        <input type="radio" id="color-red" name="color" value="red">
+        <label for="color-red">Red</label>
+        <input type="radio" id="color-blue" name="color" value="blue">
+        <label for="color-blue">Blue</label>
+
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="hobby-reading" value="reading">
+        <label for="hobby-reading">Reading</label>
+        <input type="checkbox" id="hobby-traveling" value="traveling">
+        <label for="hobby-traveling">Traveling</label>
+
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
